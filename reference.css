@@ -26,12 +26,14 @@ pre {
 	display: block;
 	font-family: dejavu;
 	white-space: pre;
-	margin: 1em 0;
+	margin: 2em 0;
 	font-size:   10pt;
 	text-align:  left;
 	line-height: 1.2;
 	color:var(--notsoblack);
 	background-color: #f2f2f2;
+	border-radius: 8px;
+	
 	
 }
 
