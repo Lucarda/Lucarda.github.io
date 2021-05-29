@@ -1,45 +1,61 @@
-@font-face {
-  font-family: dejavu;
-  src: url(DejaVuSansMono-Bold.woff);
-}
 
-:root {
-  --notsoblack: #262626;
-}
 
-body {
-	font-family: dejavu;
-	width: 6.5in; 
+HTML { 
+	background:  #ffffff; 
+	color: 	     #000000;
+	font-size:   12.7pt; /* this is because there were many <p> missing. We can change this value to 7pt to easily detect missing <p> */
+	line-height: 1.6;
+} 
+BODY { 
+	width: 	    6.5in; 
 	margin-left: 0.8in;
-	/*background-color: #f2f2f2;*/
+	font-family: Times, Times New Roman, serif;
+	} 
+H1 {
+	font-size:   32.7pt;
+	text-align:  center;
 }
-
-p {
-	font-size:   10pt;
+H2 {
+	font-size:   22.7pt;
 	text-align:  left;
-	line-height: 1.2;
-	color:var(--notsoblack);
-	
 }
-
-pre {
-	display: block;
-	font-family: dejavu;
-	white-space: pre;
-	margin: 2em 0;
-	font-size:   10pt;
+H3 {
+	font-size:   14.7pt;
 	text-align:  left;
-	line-height: 1.2;
-	color:var(--notsoblack);
-	background-color: #f2f2f2;
-	border-radius: 8px;
-	
-	
+}
+H4 {
+	font-size:   12.7pt;
+	text-align:  left;
+}
+H5 {
+	font-size:   10.7pt;
+	text-align:  left;
+}
+H6 {
+	font-size:   10.7pt;
+	text-align:  left;
+}
+PRE { 
+   font-size: 80%;
+   background-color:rgb(240, 240, 240);
+   text-align:  left;
+   border-radius: 8px;
+   padding: 8px;
 }
 
-h2 {
-color:var(--notsoblack);	
+ol{
+	font-size:   14.5pt;
+	text-align:  left;
+	line-height: 1.6;
+	}
+
+
+p{
+	font-size:   12.7pt;
+	text-align:  left;
+	line-height: 1.6;
 }
+
 
 /* standard link */
 
@@ -64,6 +80,55 @@ a:active {
     text-decoration: none;
 	color: blue;
 }
+
+
+/* green link (like a button) */
+
+a.green:link {
+	font-family:sans-serif;
+	background-color: #4CAF50; /* Green */
+    border-radius: 4px;
+    color: white;
+    padding: 0px 8px ;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 80%;
+	
+}
+
+a.green:hover {
+    text-decoration: none;
+	background-color: #4CAF50;	
+}
+
+a.green:visited {
+	color: white;
+}
+
+/* standard images */
+
+IMG {
+ 
+    display: block;
+    margin: 0 auto;
+	width: auto;
+    
+
+}
+
+mark {
+background-color: rgb(255, 240, 179);
+}
+
+p.fig {
+text-align: center;
+}
+
+
+
+
+
 
 /* responsive css for small "devices" */
 
