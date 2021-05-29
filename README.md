@@ -6,4 +6,4 @@ Files can live in the pure-data github repo under a special https://pages.github
 
 ----------------
 
-Files here can be browsed via https://lucarda.github.io./ . I opted dejavu font just to not decide anything. This of course can be changed. You can test how it renders on the Desktop, tablet or Phone.
+Files here can be browsed via https://lucarda.github.io./ . You can test how it renders on the Desktop, tablet or Phone.
