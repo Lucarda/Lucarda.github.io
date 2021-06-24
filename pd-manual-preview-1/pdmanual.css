@@ -36,9 +36,6 @@ H1.dark-theme, H2.dark-theme, H3.dark-theme, H4.dark-theme, H5.dark-theme, H6.da
 }
 
 
-
-
-
 PRE { 
    --color: #f0f0f0;
 }
@@ -54,6 +51,33 @@ mark {
 mark.dark-theme {
  --background-color: #60636c;
 }
+
+IMG {
+	--filter: brightness(1) contrast(1);
+}
+
+IMG.dark-theme {
+	--filter: brightness(.8) contrast(1.2);
+}
+
+
+a:link {
+	--color: #006699;
+}
+
+a.dark-theme:link {
+	--color: #0077b3;
+}
+
+a:visited {
+	--color: #006699;
+}
+
+a.dark-theme:visited {
+	--color: #0077b3;
+}
+
+
 
 
 /*     */
@@ -142,22 +166,17 @@ P {
 
 a:link {
     text-decoration: none;
-	color: #006699;
-	/*color: blue;*/
+	color: var(--color);
 }
 
 a:visited {
     text-decoration: none;
-	color: #006699;
-	/*color: blue;*/
+	color: var(--color);
 }
 
 a:hover {
-    /*text-decoration: underline;*/
-	/*color: grey;*/
-	/*color: black;*/
+
 	background-color:#eeeee4;
-	/*font-weight: bold;*/
 }
 
 a:active {
@@ -197,7 +216,7 @@ IMG {
     display: block;
     margin: 0 auto;
 	width: auto;
-    
+	filter: var(--filter);
 
 }
 
