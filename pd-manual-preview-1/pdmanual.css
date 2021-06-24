@@ -1,110 +1,139 @@
-/* --------------- old code 
-HTML { 
-	background:  #ffffff; 
-	color: 	     #000000;
-	font-family: Times, Times New Roman, serif;
-	font-size:   10pt;
-} 
+@charset "utf-8";
+
+/* themes */
+
+	
+
+	
 BODY { 
-	width: 	    6.5in; 
-	margin-left: 0.5in
-} 
-H1 {
-	font-size:   36pt;
-	text-align:  center;
+	--background:  #ffffff; 
+	--color: 	   #000000;
 }
-H2 {
-	font-size:   10pt;
-	text-align:  center;
+
+BODY.dark-theme {	
+	--background:  #202124;
+	--color: 	   #ffffff;
 }
-H3 {
-	font-size:   12pt;
-	text-align:  left;
+
+P { 
+	--color: 	   #3E4349; /*#3E4349;*/
 }
-H4 {
-	font-size:   10pt;
-	text-align:  left;
+
+P.dark-theme {
+	--color: 	   #BCC0C3;
+}	
+
+
+H1, H2, H3, H4, H5, H6, ol, ul, mark, PRE { 
+	--ccolor: #3E4349;
+ 
 }
-H5 {
-	font-size:   8pt;
-	text-align:  left;
+
+
+
+H1.dark-theme, H2.dark-theme, H3.dark-theme, H4.dark-theme, H5.dark-theme, H6.dark-theme, ol.dark-theme, ul.dark-theme, mark.dark-theme, PRE.dark-theme { 
+	--ccolor: #dedede; 
 }
-H6 {
-	font-size:   8pt;
-	text-align:  left;
-}
+
+
+
+
+
 PRE { 
-   font-size:   8pt;
-	text-align:  left;
+   --color: #f0f0f0;
 }
 
---------------- end old code */
+PRE.dark-theme { 
+   --color: #303136;
+}
 
-HTML { 
-	background:  #ffffff; 
-	color: 	     #000000;
+mark {
+ --background-color: #fff0b3;
+}
+
+mark.dark-theme {
+ --background-color: #60636c;
+}
+
+
+/*     */
+
+
+
+BODY { 
+	background:  var(--background) ;
+	color: 	     var(--color);
+	font-family: Helevetica, sans-serif;
 	font-size:   12.7pt; /* this is because there were many <p> missing. We can change this value to 7pt to easily detect missing <p> */
 	line-height: 1.6;
-} 
-BODY { 
+	}
+	
+#corpus { 
+
 	width: 	    6.5in; 
 	margin-left: 0.8in;
-	font-family: Georgia, serif;
-	} 
+	}
+	
 H1 {
 	font-size:   32.7pt;
 	text-align:  center;
 	font-weight: normal;
+	font-family: serif;
 	
 }
 H2 {
 	font-size:   22.7pt;
 	text-align:  center;
 	font-weight: normal;
+	font-family: serif;
 }
 H3 {
 	font-size:   14.7pt;
 	text-align:  left;
+	font-family: serif;
 }
 H4 {
 	font-size:   12.7pt;
 	text-align:  left;
+	font-family: serif;
 }
 H5 {
 	font-size:   10.7pt;
 	text-align:  left;
+	font-family: serif;
 }
 H6 {
 	font-size:   10.7pt;
 	text-align:  left;
+	font-family: serif;
 }
 
 H1, H2, H3, H4, H5, H6, ol, ul, mark, PRE { 
-color: #3E4349;
+color: var(--ccolor);
  
 }
 
 PRE { 
    font-size: 80%;
-   background-color:rgb(240, 240, 240);
+   background-color:var(--color);
    text-align:  left;
    border-radius: 8px;
    padding: 8px;
    font-family: 'Consolas', 'Menlo', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', monospace;
 }
 
-ol{
+ol {
 	font-size:   14.5pt;
 	text-align:  left;
 	line-height: 1.6;
 	}
 
 
-p{
+P {
 	font-size:   12.7pt;
 	text-align:  left;
 	line-height: 1.6;
-	color: #3E4349;
+	color: var(--color);
 	line-height: 1.4em;
 }
 
@@ -127,7 +156,7 @@ a:hover {
     /*text-decoration: underline;*/
 	/*color: grey;*/
 	/*color: black;*/
-	background-color:rgb(238, 238, 228);
+	background-color:#eeeee4;
 	/*font-weight: bold;*/
 }
 
@@ -173,14 +202,18 @@ IMG {
 }
 
 mark {
-background-color: rgb(255, 240, 179);
+background-color: var(--background-color);
 }
 
 p.fig {
 text-align: center;
 }
 
-
+div.butt {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
 
 
 
@@ -188,19 +221,21 @@ text-align: center;
 /* responsive css for small "devices" */
 
 @media screen and (max-device-width: 700px) {
-    body {
+    #corpus {
     padding: 10px;    
 	width: 	    auto; 
-	margin-left: 6px;		
+	margin-left: 6px;
     }
+	H1 {font-size:   25pt;}
 }
 
 /* responsive css for small "browser window" */
 
 @media screen and (max-width: 701px) {
-    body {
+    #corpus {
     padding: 10px;    
 	width: 	    auto; 
-	margin-left: 6px;		
+	margin-left: 6px;	
     }
+	H1 {font-size:   25pt;}
 }
