@@ -58,6 +58,16 @@ function doDark () {
     x[i].classList.add("dark-theme");
 	}
 	
+  var x = document.getElementsByTagName("IMG");  
+  for (i = 0; i < x.length; i++) {
+    x[i].classList.add("dark-theme");
+	}
+	
+  var x = document.getElementsByTagName("a");  
+  for (i = 0; i < x.length; i++) {
+    x[i].classList.add("dark-theme");
+	}
+	
 }
 
 function doLight () {
@@ -118,7 +128,20 @@ function doLight () {
   for (i = 0; i < x.length; i++) {
     x[i].classList.remove("dark-theme");
 	}
+	
+  var x = document.getElementsByTagName("IMG");  
+  for (i = 0; i < x.length; i++) {
+    x[i].classList.remove("dark-theme");
+	}
+	
+  var x = document.getElementsByTagName("a");  
+  for (i = 0; i < x.length; i++) {
+    x[i].classList.remove("dark-theme");
+	}
 }
+
+
+
 
 const btn = document.querySelector(".btn-toggle");
 
