@@ -209,6 +209,19 @@ a.green:visited {
 	color: white;
 }
 
+
+/* button like a link */
+
+.btn-toggle {
+  background-color: transparent;
+  border: none;
+  color: #666666;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
 /* standard images */
 
 IMG {
