@@ -2,48 +2,50 @@
 
 function doDark () {
   document.body.classList.add("dark-theme");
-  var i; 
-  var x = document.getElementsByTagName("P");  
+  var i;
+  var x;
+  
+  x = document.getElementsByTagName("P");  
   for (i = 0; i < x.length; i++) {
     x[i].classList.add("dark-theme");
 	}
 	
-  var x = document.getElementsByTagName("h1");  
+  x = document.getElementsByTagName("h1");  
   for (i = 0; i < x.length; i++) {
     x[i].classList.add("dark-theme");
 	}
 	
-  var x = document.getElementsByTagName("h2");  
+  x = document.getElementsByTagName("h2");  
   for (i = 0; i < x.length; i++) {
     x[i].classList.add("dark-theme");
 	}
 	
-  var x = document.getElementsByTagName("h3");  
+  x = document.getElementsByTagName("h3");  
   for (i = 0; i < x.length; i++) {
     x[i].classList.add("dark-theme");
 	}
 	
-  var x = document.getElementsByTagName("h4");  
+  x = document.getElementsByTagName("h4");  
   for (i = 0; i < x.length; i++) {
     x[i].classList.add("dark-theme");
 	}
 	
-  var x = document.getElementsByTagName("h5");  
+  x = document.getElementsByTagName("h5");  
   for (i = 0; i < x.length; i++) {
     x[i].classList.add("dark-theme");
 	}
 
-  var x = document.getElementsByTagName("h6");  
+  x = document.getElementsByTagName("h6");  
   for (i = 0; i < x.length; i++) {
     x[i].classList.add("dark-theme");
 	}
 	
-  var x = document.getElementsByTagName("ol");  
+  x = document.getElementsByTagName("ol");  
   for (i = 0; i < x.length; i++) {
     x[i].classList.add("dark-theme");
 	}
 	
-  var x = document.getElementsByTagName("ul");  
+  x = document.getElementsByTagName("ul");  
   for (i = 0; i < x.length; i++) {
     x[i].classList.add("dark-theme");
 	}
@@ -53,17 +55,17 @@ function doDark () {
     x[i].classList.add("dark-theme");
 	}
 	
-  var x = document.getElementsByTagName("PRE");  
+  x = document.getElementsByTagName("PRE");  
   for (i = 0; i < x.length; i++) {
     x[i].classList.add("dark-theme");
 	}
 	
-  var x = document.getElementsByTagName("IMG");  
+  x = document.getElementsByTagName("IMG");  
   for (i = 0; i < x.length; i++) {
     x[i].classList.add("dark-theme");
 	}
 	
-  var x = document.getElementsByTagName("a");  
+  x = document.getElementsByTagName("a");  
   for (i = 0; i < x.length; i++) {
     x[i].classList.add("dark-theme");
 	}
@@ -72,89 +74,116 @@ function doDark () {
 
 function doLight () {
   document.body.classList.remove("dark-theme");
+
+  var i;
+  var x;
   
-  var x = document.getElementsByTagName("P");
+  x = document.getElementsByTagName("P");
   var i;
   for (i = 0; i < x.length; i++) {
     x[i].classList.remove("dark-theme");
 	}
 	
-  var x = document.getElementsByTagName("h1");  
+  x = document.getElementsByTagName("h1");  
   for (i = 0; i < x.length; i++) {
     x[i].classList.remove("dark-theme");
 	}
 	
-  var x = document.getElementsByTagName("h2");  
+  x = document.getElementsByTagName("h2");  
   for (i = 0; i < x.length; i++) {
     x[i].classList.remove("dark-theme");
 	}
 	
-  var x = document.getElementsByTagName("h3");  
+  x = document.getElementsByTagName("h3");  
   for (i = 0; i < x.length; i++) {
     x[i].classList.remove("dark-theme");
 	}
 	
-  var x = document.getElementsByTagName("h4");  
+  x = document.getElementsByTagName("h4");  
   for (i = 0; i < x.length; i++) {
     x[i].classList.remove("dark-theme");
 	}
 	
-  var x = document.getElementsByTagName("h5");  
+  x = document.getElementsByTagName("h5");  
   for (i = 0; i < x.length; i++) {
     x[i].classList.remove("dark-theme");
 	}
 
-  var x = document.getElementsByTagName("h6");  
+  x = document.getElementsByTagName("h6");  
   for (i = 0; i < x.length; i++) {
     x[i].classList.remove("dark-theme");
 	}
 	
-  var x = document.getElementsByTagName("ol");  
+  x = document.getElementsByTagName("ol");  
   for (i = 0; i < x.length; i++) {
     x[i].classList.remove("dark-theme");
 	}
 	
-  var x = document.getElementsByTagName("ul");  
+  x = document.getElementsByTagName("ul");  
   for (i = 0; i < x.length; i++) {
     x[i].classList.remove("dark-theme");
 	}
 	
-  var x = document.getElementsByTagName("mark");  
+  x = document.getElementsByTagName("mark");  
   for (i = 0; i < x.length; i++) {
     x[i].classList.remove("dark-theme");
 	}
 	
-  var x = document.getElementsByTagName("PRE");  
+  x = document.getElementsByTagName("PRE");  
   for (i = 0; i < x.length; i++) {
     x[i].classList.remove("dark-theme");
 	}
 	
-  var x = document.getElementsByTagName("IMG");  
+  x = document.getElementsByTagName("IMG");  
   for (i = 0; i < x.length; i++) {
     x[i].classList.remove("dark-theme");
 	}
 	
-  var x = document.getElementsByTagName("a");  
+  x = document.getElementsByTagName("a");  
   for (i = 0; i < x.length; i++) {
     x[i].classList.remove("dark-theme");
 	}
 }
 
+function doSerif () {	
+  document.body.classList.remove("sans-serif");
+  document.body.classList.add("serif");
+}
 
-
+function doSansserif () {	
+  document.body.classList.remove("sans");
+  document.body.classList.add("sans-serif");
+  
+  
+  
+}
 
 const btn = document.querySelector(".btn-toggle");
-
 const currentTheme = localStorage.getItem("theme");
 
+
+
+const btnfont = document.querySelector(".btn-toggle-font");
+const currentBodyfont = localStorage.getItem("bodyFont");
+
+
+
+
 console.log(currentTheme);
+console.log(currentBodyfont);
 
 if (currentTheme == "dark") {
   doDark();	
   } else {
 	  doLight();
   }
- 
+
+
+if (currentBodyfont == "sans-serif") {
+  doSansserif();	
+  } else {
+	  doSerif();
+  }  
 
 
 btn.addEventListener("click", function () {
@@ -171,3 +200,19 @@ btn.addEventListener("click", function () {
   localStorage.setItem("theme", theme);
 });
 
+
+
+
+btnfont.addEventListener("click", function () {
+  document.body.classList.toggle("sans-serif"); 
+
+  let bodyFont = "serif";
+
+  if (document.body.classList.contains("sans-serif")) {
+    bodyFont = "sans-serif";
+	doSansserif();
+	} else {
+		doSerif(); 
+  }
+  localStorage.setItem("bodyFont", bodyFont);
+});
