@@ -1,4 +1,10 @@
-
+/* (c) Lucas Cordiviola - lucarda27@hotmail.com
+* this file works with "pdmanual.css" to allow the user
+* to switch to "dark-mode" and also to switch to 
+* "sans-serif" font.
+* 
+* Licensed under the MIT license - https://opensource.org/licenses/MIT
+*/
 
 function doDark () {
   document.body.classList.add("dark-theme");

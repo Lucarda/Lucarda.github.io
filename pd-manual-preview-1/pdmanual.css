@@ -1,8 +1,17 @@
+/* (c) Lucas Cordiviola - lucarda27@hotmail.com
+* this file works with "pdmanual.js" to allow the user
+* to switch to "dark-mode" and also to switch to 
+* "sans-serif" font.
+*
+* dark-mode colors and sans-serif font suggested by Esteban Viveros.
+* 
+* Licensed under the MIT license - https://opensource.org/licenses/MIT
+*/
+
+
 @charset "utf-8";
 
-/* themes */
-
-	
+/* themes variables */
 
 	
 BODY { 
@@ -23,6 +32,8 @@ BODY.sans-serif {
 	--font-family: Helevetica, sans-serif; 
 }
 
+
+
 P { 
 	--color: 	   #3E4349; /*#3E4349;*/
 }
@@ -36,8 +47,6 @@ H1, H2, H3, H4, H5, H6, ol, ul, mark, PRE {
 	--ccolor: #3E4349;
  
 }
-
-
 
 H1.dark-theme, H2.dark-theme, H3.dark-theme, H4.dark-theme, H5.dark-theme, H6.dark-theme, ol.dark-theme, ul.dark-theme, mark.dark-theme, PRE.dark-theme { 
 	--ccolor: #dedede; 
@@ -88,7 +97,7 @@ a.dark-theme:visited {
 
 
 
-/*     */
+/*  css  */
 
 
 
@@ -267,15 +276,17 @@ div.butt {
 	margin-left: 6px;
     }
 	H1 {font-size:   25pt;}
+	IMG {max-width: 100%;}
 }
 
 /* responsive css for small "browser window" */
 
-@media screen and (max-width: 701px) {
+@media screen and (max-width: 700px) {
     #corpus {
     padding: 10px;    
 	width: 	    auto; 
 	margin-left: 6px;	
     }
 	H1 {font-size:   25pt;}
+	IMG {max-width: 100%;}
 }
