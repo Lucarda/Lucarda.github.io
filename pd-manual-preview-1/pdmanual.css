@@ -29,7 +29,7 @@ BODY.serif {
 }
 
 BODY.sans-serif {	
-	--font-family: Helevetica, sans-serif; 
+	--font-family: Helvetica, sans-serif; 
 }
 
 
@@ -58,6 +58,14 @@ PRE {
 }
 
 PRE.dark-theme { 
+   --color: #303136;
+}
+
+CODE { 
+   --color: #f0f0f0;
+}
+
+CODE.dark-theme { 
    --color: #303136;
 }
 
@@ -99,7 +107,9 @@ a.dark-theme:visited {
 
 /*  css  */
 
-
+:root {
+  font-weight: 400;
+}
 
 BODY { 
 	background:  var(--background) ;
@@ -119,34 +129,34 @@ H1 {
 	font-size:   32.7pt;
 	text-align:  center;
 	font-weight: normal;
-	font-family: Georgia, serif;
+	
 	
 }
 H2 {
 	font-size:   22.7pt;
 	text-align:  center;
 	font-weight: normal;
-	font-family: Georgia, serif;
+	
 }
 H3 {
 	font-size:   14.7pt;
 	text-align:  left;
-	font-family: Georgia, serif;
+	
 }
 H4 {
 	font-size:   12.7pt;
 	text-align:  left;
-	font-family: Georgia, serif;
+	
 }
 H5 {
 	font-size:   10.7pt;
 	text-align:  left;
-	font-family: Georgia, serif;
+	
 }
 H6 {
 	font-size:   10.7pt;
 	text-align:  left;
-	font-family: Georgia, serif;
+	
 }
 
 H1, H2, H3, H4, H5, H6, ol, ul, mark, PRE { 
@@ -160,6 +170,15 @@ PRE {
    text-align:  left;
    border-radius: 8px;
    padding: 8px;
+   font-family: 'Consolas', 'Menlo', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', monospace;
+}
+
+CODE { 
+   font-size: 80%;
+   background-color:var(--color);
+   text-align:  left;
+   border-radius: 8px;
+   padding: 4px;
    font-family: 'Consolas', 'Menlo', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', monospace;
 }
 
@@ -229,7 +248,7 @@ a.green:visited {
 
 /* button like a link */
 
-.btn-toggle, .btn-toggle-font {
+.btn-toggle-theme, .btn-toggle-font {
   background-color: transparent;
   border: none;
   color: #666666;

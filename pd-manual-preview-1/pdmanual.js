@@ -76,6 +76,11 @@ function doDark () {
     x[i].classList.add("dark-theme");
 	}
 	
+  x = document.getElementsByTagName("CODE");  
+  for (i = 0; i < x.length; i++) {
+    x[i].classList.add("dark-theme");
+	}
+	
 }
 
 function doLight () {
@@ -149,6 +154,11 @@ function doLight () {
   for (i = 0; i < x.length; i++) {
     x[i].classList.remove("dark-theme");
 	}
+	
+  x = document.getElementsByTagName("CODE");  
+  for (i = 0; i < x.length; i++) {
+    x[i].classList.remove("dark-theme");
+	}
 }
 
 function doSerif () {	
@@ -164,7 +174,7 @@ function doSansserif () {
   
 }
 
-const btn = document.querySelector(".btn-toggle");
+const btntheme = document.querySelector(".btn-toggle-theme");
 const currentTheme = localStorage.getItem("theme");
 
 
@@ -192,7 +202,7 @@ if (currentBodyfont == "sans-serif") {
   }  
 
 
-btn.addEventListener("click", function () {
+btntheme.addEventListener("click", function () {
   document.body.classList.toggle("dark-theme"); 
 
   let theme = "light";
