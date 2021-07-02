@@ -70,6 +70,7 @@ tr.dark-theme:nth-child(even) {
 	
 table, td, th {
   --ccolor: #3E4349;
+  padding: 6px;
 }
 
 table.dark-theme, td.dark-theme, th.dark-theme {
