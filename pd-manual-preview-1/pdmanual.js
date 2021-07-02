@@ -81,6 +81,21 @@ function doDark () {
     x[i].classList.add("dark-theme");
 	}
 	
+  x = document.getElementsByTagName("tr");  
+  for (i = 0; i < x.length; i++) {
+    x[i].classList.add("dark-theme");
+	}
+	
+  x = document.getElementsByTagName("th");  
+  for (i = 0; i < x.length; i++) {
+    x[i].classList.add("dark-theme");
+	}
+	
+  x = document.getElementsByTagName("td");  
+  for (i = 0; i < x.length; i++) {
+    x[i].classList.add("dark-theme");
+	}
+	
 }
 
 function doLight () {
@@ -156,6 +171,21 @@ function doLight () {
 	}
 	
   x = document.getElementsByTagName("CODE");  
+  for (i = 0; i < x.length; i++) {
+    x[i].classList.remove("dark-theme");
+	}
+	
+  x = document.getElementsByTagName("tr");  
+  for (i = 0; i < x.length; i++) {
+    x[i].classList.remove("dark-theme");
+	}
+	
+  x = document.getElementsByTagName("th");  
+  for (i = 0; i < x.length; i++) {
+    x[i].classList.remove("dark-theme");
+	}
+	
+  x = document.getElementsByTagName("td");  
   for (i = 0; i < x.length; i++) {
     x[i].classList.remove("dark-theme");
 	}

@@ -89,15 +89,67 @@ several external objects, as discussed further on).
 <p> These are Pd objects compiled to binaries from programming code (like
 in C or C++). They have to be compiled for your operating system, which
 means the binaries have different extensions according to each platform. For
-instance:
-
- 
-	<UL>
-	<LI> <b>.pd_darwin</b>: macOS binary extension
-	<LI> <b>.dll</b>: Windows binary extension
-	<LI> <b>.pd_linux</b>: Linux binary extension 
+instance:	
 	
-	</UL>
+<table>
+<thead>
+<tr>
+<th style="text-align:center;"> </th>
+<th style="text-align:center;"> Linux </th>
+<th style="text-align:center;"> macOS </th>
+<th style="text-align:center;"> Windows </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center;"><strong>i386</strong></td>
+<td style="text-align:center;">.pd_linux</td>
+<td style="text-align:center;">.pd_darwin</td>
+<td style="text-align:center;">.dll</td>
+</tr>
+<tr>
+<td style="text-align:center;">  </td>
+<td style="text-align:center;">.l_i386</td>
+<td style="text-align:center;">.d_i386  </td>
+<td style="text-align:center;">.m_i386  </td>
+</tr>
+<tr>
+<td style="text-align:center;"><strong>amd64</strong></td>
+<td style="text-align:center;">.pd_linux</td>
+<td style="text-align:center;">.pd_darwin</td>
+<td style="text-align:center;">.dll</td>
+</tr>
+<tr>
+<td style="text-align:center;">  </td>
+<td style="text-align:center;">.l_amd64</td>
+<td style="text-align:center;">.d_amd64  </td>
+<td style="text-align:center;">.m_amd64  </td>
+</tr>
+<tr>
+<td style="text-align:center;"><strong>both</strong>  </td>
+<td style="text-align:center;"></td>
+<td style="text-align:center;">.d_fat  </td>
+<td style="text-align:center;">  </td>
+</tr>
+<tr>
+<td style="text-align:center;"><strong>arm</strong>  </td>
+<td style="text-align:center;">.l_arm</td>
+<td style="text-align:center;">  </td>
+<td style="text-align:center;">  </td>
+</tr>
+<tr>
+<td style="text-align:center;"><strong>arm64</strong>  </td>
+<td style="text-align:center;">.l_arm64</td>
+<td style="text-align:center;">  </td>
+<td style="text-align:center;">  </td>
+</tr>
+</tbody>
+</table>
+	
+	
+	
+	
+	
 	
 <H3> <A id=s1.2.2> 4.1.2.2. Abstractions:</A> </H3>
 
