@@ -327,7 +327,14 @@ div.butt {
   left: 0;
 }
 
+blockquote {  
+  padding: 0;
+  margin-right:0px;
+}
 
+blockquote p {
+  text-align: right;
+}
 
 
 /* responsive css for small "devices" */
