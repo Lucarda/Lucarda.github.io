@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>float</title>	 
+<meta http-equiv="Content-Type" content="text/html">
+<link rel="stylesheet" type="text/css" href="pdmanual.css" media="screen">  
+</head>
+<body>
+<div class="butt">
+<button class="btn-toggle-theme">&#9680;</button><button class="btn-toggle-font">f</button>
+
+</div>
+<div id=corpus>
+<p><a href="index.html">index</a></p>
+<h3 id="float">[float]</h3>
+<p>Store a (floating point) number</p>
+<p>The float object stores a number, initialized by its creation argument, which may be reset using its inlet and output by sending it the “bang” message. Sending a number sets a new value and outputs it.</p>
+<p>inlet 0</p>
+<ul>
+<li>bang: outputs the float</li>
+<li>float: outputs the float</li>
+<li>symbol: converts to float</li>
+<li><code>send</code> to a named object</li>
+</ul>
+<p>inlet 1</p>
+<ul>
+<li>float: sets a float without outputting</li>
+</ul>
+<p>outlet 0</p>
+<ul>
+<li>float</li>
+</ul>
+<blockquote>
+<p>see also <a href="int.html">[int]</a> <a href="value.html">[value]</a> <a href="send.html">[send]</a></p>
+</blockquote>
+</div>
+<script src="pdmanual.js"></script>
+</body>
+</html>

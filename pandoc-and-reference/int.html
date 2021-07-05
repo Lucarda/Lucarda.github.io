@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>int</title>	 
+<meta http-equiv="Content-Type" content="text/html">
+<link rel="stylesheet" type="text/css" href="pdmanual.css" media="screen">  
+</head>
+<body>
+<div class="butt">
+<button class="btn-toggle-theme">&#9680;</button><button class="btn-toggle-font">f</button>
+
+</div>
+<div id=corpus>
+<p><a href="index.html">index</a></p>
+<h3 id="int">[int]</h3>
+<p>Store an integer</p>
+<p>The int object stores a number, initialized by its creation argument, which may be reset using its inlet and output by sending it the “bang” message. Sending a number sets a new value and outputs it. The output is truncated to an integer a la Max.</p>
+<p>inlet 0</p>
+<ul>
+<li>bang: outputs the value</li>
+<li>float: set and output the value</li>
+<li><code>send</code> to a named object</li>
+</ul>
+<p>inlet 1</p>
+<ul>
+<li>float: set the value</li>
+</ul>
+<p>outlet 0</p>
+<ul>
+<li>float</li>
+</ul>
+<blockquote>
+<p>see also <a href="float.html">[float]</a> <a href="value.html">[value]</a> <a href="send.html">[send]</a></p>
+</blockquote>
+</div>
+<script src="pdmanual.js"></script>
+</body>
+</html>
