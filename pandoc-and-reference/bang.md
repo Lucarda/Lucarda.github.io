@@ -1,4 +1,4 @@
-[index](index.html)
+[index](index.html#general)
 
 ### [bang]
 
@@ -11,4 +11,8 @@ inlet 0
 outlet 0
 
  - bang
+ 
+> updated for Pd version 0.27
+ 
+
 

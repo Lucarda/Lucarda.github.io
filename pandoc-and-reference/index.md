@@ -10,7 +10,7 @@ boxes but come straight off the "add" menu.)
 [[float]](float.html) - store and recall a number\
 [[symbol]](symbol.html) - store and recall a symbol\
 [[int]](int.html) - store and recall an integer\
-[[send]]( # ) - send a message to a named object\
+[[send]](send.html) - send a message to a named object\
 [[receive]]( # ) - catch "sent" messages\
 [[select]]( # ) - test for matching numbers or symbols\
 [[route]]( # ) - route messages according to first element\

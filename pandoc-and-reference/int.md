@@ -1,4 +1,4 @@
-[index](index.html)
+[index](index.html#general)
 
 ### [int] 
 
@@ -26,5 +26,6 @@ outlet 0
  - float
  
 > see also [[float]](float.html) [[value]](value.html) [[send]](send.html)
- 
+
+> updated for Pd version 0.48
 
